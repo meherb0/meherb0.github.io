@@ -102,14 +102,14 @@ nav{
 
 /* ============ hero ============ */
 .hero{
-  min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;
-  padding:0 var(--pad) clamp(28px,4vh,52px);position:relative;
+  min-height:100svh;display:flex;flex-direction:column;
+  padding:110px var(--pad) clamp(28px,4vh,52px);position:relative;
 }
-.hero-top{position:absolute;top:50%;left:var(--pad);right:var(--pad);transform:translateY(-92%)}
+.hero-top{margin:auto 0;padding-bottom:clamp(24px,5vh,64px)}
 .hero-role{margin-bottom:26px}
 h1{
   font-weight:400;text-transform:uppercase;
-  font-size:clamp(3.1rem,12.5vw,11rem);
+  font-size:min(clamp(3.1rem,12.5vw,11rem), 20vh);
   line-height:.92;letter-spacing:-.04em;
 }
 h1 .row2{display:flex;align-items:baseline;gap:clamp(12px,2.5vw,36px);flex-wrap:wrap}
