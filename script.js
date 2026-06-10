@@ -222,3 +222,25 @@ if (hasGsap && !reduce){
   }
   tick(); setInterval(tick, 30000);
 })();
+
+/* ============ v5 additions ============ */
+
+/* ---------- click-to-copy email ---------- */
+(function(){
+  const btn = document.getElementById('copy-email');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    navigator.clipboard.writeText('meherarush@gmail.com').then(() => {
+      btn.textContent = '[ copied ✓ ]';
+      btn.classList.add('copied');
+      setTimeout(() => { btn.textContent = '[ copy ]'; btn.classList.remove('copied'); }, 1600);
+    });
+  });
+})();
+
+/* ---------- console easter egg ---------- */
+console.log('%cMB.', 'color:#d9a441;font-size:42px;font-weight:bold;font-family:monospace');
+console.log(
+  '%cYou opened the console. Respect.\nCode lives at github.com/meherb0 — meherarush@gmail.com if you want to talk.',
+  'color:#eae7e0;font-size:12px;font-family:monospace'
+);

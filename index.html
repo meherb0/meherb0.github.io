@@ -6,6 +6,20 @@
 <title>Meher Burugula — Developer</title>
 <meta name="description" content="Meher Burugula — Computer Science & Mathematics at the University of Alberta. I build complete products and ship them.">
 <meta name="theme-color" content="#0a0e16">
+
+<!-- ===== SOCIAL SHARE CARD =====
+     TODO after deploy:
+     1. Replace YOUR-SITE-URL below with your live URL (e.g. https://meherb0.github.io)
+     2. Add og-image.png (1200x630 px — screenshot your hero section) to this folder -->
+<meta property="og:title" content="Meher Burugula — Developer">
+<meta property="og:description" content="CS & Math at the University of Alberta. I build complete products and ship them.">
+<meta property="og:image" content="https://YOUR-SITE-URL/og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- TODO: add favicon.png (64x64, gold MB. on dark) to this folder -->
+<link rel="icon" href="favicon.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -72,7 +86,7 @@
     <p class="about-state" id="statement">Most people pick a side — the theory or the engineering. When you weigh everything up, <em>I'd rather use both.</em></p>
     <div class="about-side fade">
       <p>I'm a second-year <b>Computer Science and Mathematics</b> student at the University of Alberta. The math tells me why something works; the code makes it real. I don't think you should have to choose between the two.</p>
-      <p>That being said, classes only take you so far — so I build. A quant platform trained on <b>122,000+ rows of market data</b>. A neural network written in <b>raw NumPy</b>, no frameworks, just the math. A social platform with caching, auth and CI/CD. On top of that, a production store with real payments. I learn by building things slightly out of my depth, then closing the gap.</p>
+      <p>That being said, classes only take you so far — so I build. A quant platform trained on <b>122,000+ rows of market data</b>. A neural network written in <b>raw NumPy</b>, no frameworks, just the math. On top of that, I'm currently deep in <b>autonomous agents and distributed systems</b> — building things slightly out of my depth, then closing the gap.</p>
       <div class="facts">
         <div class="row"><span class="k">Degree</span><span class="v">B.Sc. Computer Science + Mathematics</span></div>
         <div class="row"><span class="k">University</span><span class="v">University of Alberta</span></div>
@@ -103,10 +117,10 @@
   <div class="cap fade">
     <div class="cap-inner">
       <div class="cap-num">/02</div>
-      <h3>Machine learning <span class="serif-i">&amp; data</span></h3>
+      <h3>Machine learning <span class="serif-i">&amp; AI</span></h3>
       <div>
-        <p>Training, evaluating and deploying models on real, messy data — classification, sentiment analysis, and neural networks built from the underlying math rather than just imported from a library.</p>
-        <div class="tags"><span>scikit-learn</span><span>NumPy</span><span>pandas</span><span>VADER</span><span>Random Forest</span></div>
+        <p>Training, evaluating and deploying models on real, messy data — classification, sentiment analysis, neural networks from the underlying math, and now agentic systems built on LLM tool calling.</p>
+        <div class="tags"><span>scikit-learn</span><span>NumPy</span><span>pandas</span><span>LLM APIs</span><span>Random Forest</span></div>
       </div>
     </div>
   </div>
@@ -114,10 +128,10 @@
   <div class="cap fade">
     <div class="cap-inner">
       <div class="cap-num">/03</div>
-      <h3>Cloud <span class="serif-i">&amp; deployment</span></h3>
+      <h3>Systems <span class="serif-i">&amp; cloud</span></h3>
       <div>
-        <p>Infrastructure that stays up when people actually use it — CI/CD pipelines, edge hosting, managed databases and caching across modern cloud platforms.</p>
-        <div class="tags"><span>Railway</span><span>Vercel</span><span>Cloudflare</span><span>Supabase</span><span>Azure</span><span>Oracle Cloud</span></div>
+        <p>From CI/CD pipelines, edge hosting and managed databases down to the fundamentals underneath them — TCP, consensus, replication — because infrastructure makes more sense when you've built a piece of it yourself.</p>
+        <div class="tags"><span>Railway</span><span>Vercel</span><span>Cloudflare</span><span>Supabase</span><span>Docker</span><span>TCP/Raft</span></div>
       </div>
     </div>
   </div>
@@ -128,9 +142,9 @@
     <h2 class="title-split">Selected <span class="serif-i">work</span></h2>
     <div class="label"><i>03</i> Projects</div>
   </div>
-  <p class="work-note fade">Four things I've built, deployed and kept running. Hover any of them — the details are all there.</p>
+  <p class="work-note fade">Two shipped and running, two in the lab. Hover any of them — the details are all there.</p>
 
-  <a class="proj" href="https://github.com/meherb0" target="_blank" rel="noopener" data-l>
+  <a class="proj" href="https://github.com/meherb0/Vestr" target="_blank" rel="noopener" data-l>
     <div class="proj-row">
       <h3><span class="a">Vestr</span><span class="b" aria-hidden="true">Vestr</span></h3>
       <span class="year">2025 — Quant platform</span>
@@ -149,26 +163,7 @@
     </div>
   </a>
 
-  <a class="proj" href="https://github.com/meherb0" target="_blank" rel="noopener" data-l>
-    <div class="proj-row">
-      <h3><span class="a">Frenzy</span><span class="b" aria-hidden="true">Frenzy</span></h3>
-      <span class="year">2025 — Social platform</span>
-    </div>
-    <p class="proj-sub">Measuring how fast the internet gets obsessed with things</p>
-    <div class="proj-body">
-      <ul>
-        <li>Aggregates <b>Reddit and YouTube activity into a weighted Hype Score</b> tracking viral velocity across 100+ communities.</li>
-        <li><b>Five-tier collectible card system</b> with rarity-specific Canvas 2D animations, plus an AI pipeline that auto-writes briefings for trending moments.</li>
-        <li>Topic-based personalisation, guest paywall architecture and <b>Redis caching</b>; Vercel CI/CD frontend, Railway-hosted backend.</li>
-      </ul>
-      <div class="proj-aside">
-        <span class="grp"><span class="h">Stack</span>React · Node.js · Supabase<br>Redis · DeepSeek AI · Vercel</span>
-        <span class="proj-cta">View on GitHub ↗</span>
-      </div>
-    </div>
-  </a>
-
-  <a class="proj" href="https://github.com/meherb0" target="_blank" rel="noopener" data-l>
+  <a class="proj" href="https://github.com/meherb0/digit-brain" target="_blank" rel="noopener" data-l>
     <div class="proj-row">
       <h3><span class="a">Digit Brain</span><span class="b" aria-hidden="true">Digit Brain</span></h3>
       <span class="year">2024 — Neural network</span>
@@ -186,23 +181,54 @@
     </div>
   </a>
 
-  <a class="proj" href="https://github.com/meherb0" target="_blank" rel="noopener" data-l>
+  <!-- ============ MB.ai — IN DEVELOPMENT ============
+       When the repo exists:
+       1. Change the <div class="proj wip"> below to:
+          <a class="proj" href="YOUR-MBAI-REPO-URL" target="_blank" rel="noopener" data-l>
+       2. Change the closing </div> of this card to </a>
+       3. Replace <span class="proj-cta soon">Repo coming soon</span>
+          with    <span class="proj-cta">View on GitHub ↗</span> -->
+  <div class="proj wip" data-l>
     <div class="proj-row">
-      <h3><span class="a">Fruits of Change</span><span class="b" aria-hidden="true">Fruits of Change</span></h3>
-      <span class="year">2026 — Client work</span>
+      <h3><span class="a">MB.ai</span><span class="b" aria-hidden="true">MB.ai</span></h3>
+      <span class="year"><span class="pulse"></span>2026 — In development</span>
     </div>
-    <p class="proj-sub">A real store with real payments, for a real foundation</p>
+    <p class="proj-sub">An autonomous agent that completes multi-step tasks without being hand-held</p>
     <div class="proj-body">
       <ul>
-        <li>Designed and built an <b>8-page e-commerce site from scratch</b> for Mangyanese Communications under the Fruits of Change Foundation.</li>
-        <li>Integrated <b>Stripe payments</b> and deployed to production on a custom domain — live transactions, not a demo.</li>
+        <li>Building a <b>tool system</b> — web search, sandboxed code execution, file operations, calculator — each exposed to the LLM as a callable function.</li>
+        <li>An <b>agent loop</b> where the model picks a tool, reads the result, decides the next step, and repeats until the task is done — with memory carried across steps.</li>
+        <li>Sandboxed execution so the agent writes and runs code <b>without destroying anything</b>, plus a frontend to hand it a task and watch it work step by step.</li>
       </ul>
       <div class="proj-aside">
-        <span class="grp"><span class="h">Stack</span>HTML/CSS · JavaScript<br>Stripe · HostGator</span>
-        <span class="proj-cta">View on GitHub ↗</span>
+        <span class="grp"><span class="h">Stack</span>Python · LLM APIs<br>Playwright · Docker · React</span>
+        <span class="proj-cta soon">Repo coming soon</span>
       </div>
     </div>
-  </a>
+  </div>
+
+  <!-- ============ MINI REDIS — IN DEVELOPMENT ============
+       Same swap as above when the repo exists:
+       div.proj.wip -> <a class="proj" href="YOUR-KV-REPO-URL" target="_blank" rel="noopener" data-l>
+       and "Repo coming soon" -> "View on GitHub ↗" -->
+  <div class="proj wip" data-l>
+    <div class="proj-row">
+      <h3><span class="a">Mini Redis</span><span class="b" aria-hidden="true">Mini Redis</span></h3>
+      <span class="year"><span class="pulse"></span>2026 — In development</span>
+    </div>
+    <p class="proj-sub">A distributed key-value store, written from first principles</p>
+    <div class="proj-body">
+      <ul>
+        <li>Starts as a <b>single-node TCP server</b> handling GET/SET/DELETE — no database libraries doing the heavy lifting.</li>
+        <li>Expands to <b>multi-node replication with Raft consensus</b>: leader election, log replication, and writes confirmed only once replicated.</li>
+        <li>Built for <b>fault tolerance</b> — kill any node and the cluster keeps working — with a CLI client to drive it. End goal: slot it under Vestr as the cache layer.</li>
+      </ul>
+      <div class="proj-aside">
+        <span class="grp"><span class="h">Stack</span>Go · TCP sockets<br>Raft consensus</span>
+        <span class="proj-cta soon">Repo coming soon</span>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="wrap" id="experience">
@@ -222,7 +248,7 @@
         <div>
           <h3>Mangyanese Communications — Fruits of Change Foundation</h3>
           <p class="role">Volunteer Web Developer</p>
-          <p>Built and launched a full e-commerce site with Stripe payments, deployed to production on a custom domain.</p>
+          <p>Designed and built an 8-page e-commerce site from scratch, integrated Stripe payments, and deployed to production on a custom domain — live transactions, not a demo.</p>
         </div>
       </div>
       <div class="xp fade">
@@ -274,10 +300,17 @@
   <div>
     <h2 class="title-split">Let's build<br><span class="serif-i">something real.</span></h2>
     <p class="sub fade">I'm looking for internships and open to freelance work. That being said — if your team ships real things, I want in.</p>
-    <a class="mail-btn fade" href="mailto:meherarush@gmail.com" data-l>
-      <span class="dot">→</span>
-      <span class="txt">meherarush@gmail.com</span>
-    </a>
+    <div class="contact-ctas fade">
+      <a class="mail-btn" href="mailto:meherarush@gmail.com" data-l>
+        <span class="dot">→</span>
+        <span class="txt">meherarush@gmail.com</span>
+      </a>
+      <!-- TODO: add Meher-Burugula-Resume.pdf to this folder -->
+      <a class="mail-btn" href="Meher-Burugula-Resume.pdf" download data-l>
+        <span class="dot">↓</span>
+        <span class="txt">Download resume</span>
+      </a>
+    </div>
   </div>
   <div class="contact-foot">
     <div class="col">
@@ -286,10 +319,11 @@
     </div>
     <div class="col">
       <a href="https://github.com/meherb0" target="_blank" rel="noopener" data-l>GitHub ↗</a><br>
-      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" data-l>LinkedIn ↗</a>
+      <a href="https://www.linkedin.com/in/meher-arush-burugula-927964379/" target="_blank" rel="noopener" data-l>LinkedIn ↗</a>
     </div>
     <div class="col">
-      <a href="mailto:meherarush@gmail.com" data-l>meherarush@gmail.com</a><br>
+      <a href="mailto:meherarush@gmail.com" data-l>meherarush@gmail.com</a>
+      <button class="copy-btn" id="copy-email" data-l>[ copy ]</button><br>
       <a href="tel:+14034731743" data-l>(403) 473-1743</a>
     </div>
     <div class="col">

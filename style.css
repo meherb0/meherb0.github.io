@@ -321,3 +321,32 @@ section{padding-top:clamp(80px,13vh,160px);padding-bottom:clamp(80px,13vh,160px)
   .marquee-inner{animation:none!important}
   *{transition-duration:.01ms!important}
 }
+
+/* ============ v5 additions ============ */
+
+/* pulsing "in development" dot */
+.pulse{
+  display:inline-block;width:7px;height:7px;border-radius:50%;
+  background:var(--gold);margin-right:9px;vertical-align:1px;
+  animation:pulse 1.8s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.75)}}
+
+/* in-development cards aren't links yet */
+.proj.wip{cursor:default}
+.proj-cta.soon{color:var(--faint);border-bottom-color:var(--line)}
+
+/* contact buttons row (email + resume side by side) */
+.contact-ctas{display:flex;flex-wrap:wrap;gap:16px 44px;align-items:center;margin-top:44px}
+.contact-ctas .mail-btn{margin-top:0}
+
+/* copy email button */
+.copy-btn{
+  cursor:pointer;background:none;border:none;padding:0;margin-left:10px;
+  color:var(--faint);font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.12em;text-transform:uppercase;transition:color .3s;
+}
+.copy-btn:hover{color:var(--gold)}
+.copy-btn.copied{color:var(--gold)}
+
+@media (prefers-reduced-motion: reduce){.pulse{animation:none}}
