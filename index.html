@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meher Burugula — Developer</title>
+<meta name="description" content="Meher Burugula — Computer Science & Mathematics at the University of Alberta. I build complete products and ship them.">
+<meta name="theme-color" content="#0a0e16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="progress" aria-hidden="true"><span></span></div>
+
+<div id="loader" aria-hidden="true">
+  <div class="l-name"><span>Meher Burugula — portfolio</span></div>
+  <div class="l-count"><span id="count">000</span><sup>%</sup></div>
+</div>
+
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-ring" aria-hidden="true"></div>
+
+<nav>
+  <a class="logo" href="#top">MB<span style="color:var(--gold)">.</span></a>
+  <div class="nav-links">
+    <a href="#about" data-l>About</a>
+    <a href="#work" data-l>Work</a>
+    <a href="#experience" data-l>Experience</a>
+    <a href="#contact" data-l>Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-top">
+    <div class="label hero-role mask"><span><i>●</i>&nbsp; Full-stack developer — CS &amp; Mathematics</span></div>
+    <h1>
+      <span class="mask"><span class="split">Meher</span></span>
+      <span class="row2">
+        <span class="mask"><span class="split">Burugula</span></span>
+        <span class="mask"><span class="serif-i">— Calgary, Canada</span></span>
+      </span>
+    </h1>
+  </div>
+  <div class="hero-foot fade">
+    <p>I study Computer Science and Math at the University of Alberta, and I build complete products — the data, the model, the backend, the interface. Judged purely on outcomes: everything here is shipped and running.</p>
+    <div class="meta">
+      <div><b>Available</b> — internships &amp; freelance</div>
+      <div>University of Alberta · 2024—present</div>
+      <div>(scroll)</div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-inner" id="mq">
+    <span>Full-stack <em>&amp;</em> machine learning <em>&amp;</em> mathematics —&nbsp;</span>
+    <span>Full-stack <em>&amp;</em> machine learning <em>&amp;</em> mathematics —&nbsp;</span>
+    <span>Full-stack <em>&amp;</em> machine learning <em>&amp;</em> mathematics —&nbsp;</span>
+    <span>Full-stack <em>&amp;</em> machine learning <em>&amp;</em> mathematics —&nbsp;</span>
+  </div>
+</div>
+
+<section class="wrap" id="about">
+  <div class="sec-head">
+    <h2 class="title-split">About <span class="serif-i">me</span></h2>
+    <div class="label"><i>01</i> Profile</div>
+  </div>
+  <div class="about-grid">
+    <p class="about-state" id="statement">Most people pick a side — the theory or the engineering. When you weigh everything up, <em>I'd rather use both.</em></p>
+    <div class="about-side fade">
+      <p>I'm a second-year <b>Computer Science and Mathematics</b> student at the University of Alberta. The math tells me why something works; the code makes it real. I don't think you should have to choose between the two.</p>
+      <p>That being said, classes only take you so far — so I build. A quant platform trained on <b>122,000+ rows of market data</b>. A neural network written in <b>raw NumPy</b>, no frameworks, just the math. A social platform with caching, auth and CI/CD. On top of that, a production store with real payments. I learn by building things slightly out of my depth, then closing the gap.</p>
+      <div class="facts">
+        <div class="row"><span class="k">Degree</span><span class="v">B.Sc. Computer Science + Mathematics</span></div>
+        <div class="row"><span class="k">University</span><span class="v">University of Alberta</span></div>
+        <div class="row"><span class="k">Based in</span><span class="v">Calgary, AB — Canada</span></div>
+        <div class="row"><span class="k">Currently</span><span class="v">Open to internships</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="capabilities">
+  <div class="sec-head">
+    <h2 class="title-split">What I <span class="serif-i">do</span></h2>
+    <div class="label"><i>02</i> Capabilities</div>
+  </div>
+
+  <div class="cap fade">
+    <div class="cap-inner">
+      <div class="cap-num">/01</div>
+      <h3>Full-stack <span class="serif-i">development</span></h3>
+      <div>
+        <p>Complete web applications, from the database to the screen — REST APIs, authentication, caching, payments, automated deploys. My rule is simple: if it doesn't ship, it doesn't count.</p>
+        <div class="tags"><span>React</span><span>FastAPI</span><span>Node.js</span><span>PostgreSQL</span><span>Redis</span><span>Stripe</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cap fade">
+    <div class="cap-inner">
+      <div class="cap-num">/02</div>
+      <h3>Machine learning <span class="serif-i">&amp; data</span></h3>
+      <div>
+        <p>Training, evaluating and deploying models on real, messy data — classification, sentiment analysis, and neural networks built from the underlying math rather than just imported from a library.</p>
+        <div class="tags"><span>scikit-learn</span><span>NumPy</span><span>pandas</span><span>VADER</span><span>Random Forest</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cap fade">
+    <div class="cap-inner">
+      <div class="cap-num">/03</div>
+      <h3>Cloud <span class="serif-i">&amp; deployment</span></h3>
+      <div>
+        <p>Infrastructure that stays up when people actually use it — CI/CD pipelines, edge hosting, managed databases and caching across modern cloud platforms.</p>
+        <div class="tags"><span>Railway</span><span>Vercel</span><span>Cloudflare</span><span>Supabase</span><span>Azure</span><span>Oracle Cloud</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="work">
+  <div class="sec-head">
+    <h2 class="title-split">Selected <span class="serif-i">work</span></h2>
+    <div class="label"><i>03</i> Projects</div>
+  </div>
+  <p class="work-note fade">Four things I've built, deployed and kept running. Hover any of them — the details are all there.</p>
+
+  <a class="proj" href="https://github.com/meherb0" target="_blank" rel="noopener" data-l>
+    <div class="proj-row">
+      <h3><span class="a">Vestr</span><span class="b" aria-hidden="true">Vestr</span></h3>
+      <span class="year">2025 — Quant platform</span>
+    </div>
+    <p class="proj-sub">An investment platform that gives you a verdict, not just a chart</p>
+    <div class="proj-body">
+      <ul>
+        <li>Serves <b>live stock data, ML buy/sell verdicts</b> and VADER sentiment analysis on real-time news headlines.</li>
+        <li>Random Forest trained on <b>5 years of OHLCV data across 100+ S&amp;P 500 tickers</b> — 122,000+ records, 47% on a 3-class task against a 33% baseline.</li>
+        <li>FastAPI backend with JWT auth, a <b>parallel-threaded multi-stock screener</b>, price alerts and PostgreSQL; deployed on Cloudflare Pages with automatic CI/CD.</li>
+      </ul>
+      <div class="proj-aside">
+        <span class="grp"><span class="h">Stack</span>Python · FastAPI · React<br>PostgreSQL · scikit-learn<br>Railway · Cloudflare</span>
+        <span class="proj-cta">View on GitHub ↗</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="proj" href="https://github.com/meherb0" target="_blank" rel="noopener" data-l>
+    <div class="proj-row">
+      <h3><span class="a">Frenzy</span><span class="b" aria-hidden="true">Frenzy</span></h3>
+      <span class="year">2025 — Social platform</span>
+    </div>
+    <p class="proj-sub">Measuring how fast the internet gets obsessed with things</p>
+    <div class="proj-body">
+      <ul>
+        <li>Aggregates <b>Reddit and YouTube activity into a weighted Hype Score</b> tracking viral velocity across 100+ communities.</li>
+        <li><b>Five-tier collectible card system</b> with rarity-specific Canvas 2D animations, plus an AI pipeline that auto-writes briefings for trending moments.</li>
+        <li>Topic-based personalisation, guest paywall architecture and <b>Redis caching</b>; Vercel CI/CD frontend, Railway-hosted backend.</li>
+      </ul>
+      <div class="proj-aside">
+        <span class="grp"><span class="h">Stack</span>React · Node.js · Supabase<br>Redis · DeepSeek AI · Vercel</span>
+        <span class="proj-cta">View on GitHub ↗</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="proj" href="https://github.com/meherb0" target="_blank" rel="noopener" data-l>
+    <div class="proj-row">
+      <h3><span class="a">Digit Brain</span><span class="b" aria-hidden="true">Digit Brain</span></h3>
+      <span class="year">2024 — Neural network</span>
+    </div>
+    <p class="proj-sub">A neural network with no frameworks — just the math, written out</p>
+    <div class="proj-body">
+      <ul>
+        <li>Three-layer neural network in <b>pure NumPy</b> — forward propagation, backpropagation and gradient descent implemented from first principles.</li>
+        <li>Trained on <b>MNIST's 70,000 images</b> to 95%+ test accuracy, with a live canvas demo where you draw a digit and watch it classify.</li>
+      </ul>
+      <div class="proj-aside">
+        <span class="grp"><span class="h">Stack</span>Python · NumPy · Matplotlib</span>
+        <span class="proj-cta">View on GitHub ↗</span>
+      </div>
+    </div>
+  </a>
+
+  <a class="proj" href="https://github.com/meherb0" target="_blank" rel="noopener" data-l>
+    <div class="proj-row">
+      <h3><span class="a">Fruits of Change</span><span class="b" aria-hidden="true">Fruits of Change</span></h3>
+      <span class="year">2026 — Client work</span>
+    </div>
+    <p class="proj-sub">A real store with real payments, for a real foundation</p>
+    <div class="proj-body">
+      <ul>
+        <li>Designed and built an <b>8-page e-commerce site from scratch</b> for Mangyanese Communications under the Fruits of Change Foundation.</li>
+        <li>Integrated <b>Stripe payments</b> and deployed to production on a custom domain — live transactions, not a demo.</li>
+      </ul>
+      <div class="proj-aside">
+        <span class="grp"><span class="h">Stack</span>HTML/CSS · JavaScript<br>Stripe · HostGator</span>
+        <span class="proj-cta">View on GitHub ↗</span>
+      </div>
+    </div>
+  </a>
+</section>
+
+<section class="wrap" id="experience">
+  <div class="sec-head">
+    <h2 class="title-split">Experience <span class="serif-i">&amp; education</span></h2>
+    <div class="label"><i>04</i> Background</div>
+  </div>
+
+  <div class="xp-grid">
+    <div class="xp-sticky fade">
+      <div class="label"><i>●</i> The path so far</div>
+      <p>Six years of leadership before I wrote my first production line of code — then I started shipping.</p>
+    </div>
+    <div>
+      <div class="xp fade">
+        <time>May 2026</time>
+        <div>
+          <h3>Mangyanese Communications — Fruits of Change Foundation</h3>
+          <p class="role">Volunteer Web Developer</p>
+          <p>Built and launched a full e-commerce site with Stripe payments, deployed to production on a custom domain.</p>
+        </div>
+      </div>
+      <div class="xp fade">
+        <time>Jun — Sep 2025</time>
+        <div>
+          <h3>Maaco Autobody Shop</h3>
+          <p class="role">Parts Coordinator &amp; Administrator</p>
+          <p>Processed repair estimates, sourced supplier parts, managed inventory, and handled customer scheduling and payments.</p>
+        </div>
+      </div>
+      <div class="xp fade">
+        <time>2019 — 2025</time>
+        <div>
+          <h3>604 Moose Royal Canadian Air Cadets</h3>
+          <p class="role">Sergeant</p>
+          <p>Led and mentored junior cadets, delivered classroom instruction, and represented the squadron at public fundraising events.</p>
+        </div>
+      </div>
+
+      <div class="edu-block">
+        <div class="label fade" style="margin-bottom:22px"><i>●</i> Education</div>
+        <div class="xp fade">
+          <time>2024 — Present</time>
+          <div>
+            <h3>University of Alberta</h3>
+            <p class="role">B.Sc. Computer Science &amp; Mathematics</p>
+            <p>Algorithms, data structures and pure mathematics in parallel — applied outside the classroom as fast as I learn them inside it.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-block">
+        <div class="label fade" style="margin-bottom:22px"><i>●</i> Certifications</div>
+        <ul class="cert-list fade">
+          <li>Certified ScrumMaster <span>ScrumAlliance</span></li>
+          <li>Azure AI Fundamentals <span>Microsoft</span></li>
+          <li>OCI Foundations <span>Oracle</span></li>
+          <li>Intro to Generative AI <span>Google</span></li>
+          <li>Python Certification <span>Python Institute</span></li>
+          <li>Agile Foundations <span>LinkedIn</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap contact" id="contact">
+  <div class="label fade"><i>05</i> Contact</div>
+  <div>
+    <h2 class="title-split">Let's build<br><span class="serif-i">something real.</span></h2>
+    <p class="sub fade">I'm looking for internships and open to freelance work. That being said — if your team ships real things, I want in.</p>
+    <a class="mail-btn fade" href="mailto:meherarush@gmail.com" data-l>
+      <span class="dot">→</span>
+      <span class="txt">meherarush@gmail.com</span>
+    </a>
+  </div>
+  <div class="contact-foot">
+    <div class="col">
+      <div>© 2026 Meher Burugula</div>
+      <div>Calgary, AB — <span id="clock"></span></div>
+    </div>
+    <div class="col">
+      <a href="https://github.com/meherb0" target="_blank" rel="noopener" data-l>GitHub ↗</a><br>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener" data-l>LinkedIn ↗</a>
+    </div>
+    <div class="col">
+      <a href="mailto:meherarush@gmail.com" data-l>meherarush@gmail.com</a><br>
+      <a href="tel:+14034731743" data-l>(403) 473-1743</a>
+    </div>
+    <div class="col">
+      <button id="top-btn" data-l>Back to top ↑</button>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
