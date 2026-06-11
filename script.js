@@ -198,21 +198,21 @@ if (hasGsap && !reduce){
   });
 })();
 
-/* ---------- magnetic mail button ---------- */
+/* ---------- magnetic buttons ---------- */
 (function(){
   if (reduce || window.matchMedia('(hover: none)').matches) return;
-  const btn = document.querySelector('.mail-btn');
-  btn.addEventListener('mousemove', e => {
-    const r = btn.getBoundingClientRect();
-    btn.style.transform = `translate(${(e.clientX - r.left - r.width/2) * 0.18}px,${(e.clientY - r.top - r.height/2) * 0.3}px)`;
-  });
-  btn.addEventListener('mouseleave', () => {
-    btn.style.transition = 'transform .5s cubic-bezier(.2,.8,.2,1)';
-    btn.style.transform = '';
-    setTimeout(() => btn.style.transition = '', 500);
+  document.querySelectorAll('.mail-btn').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect();
+      btn.style.transform = `translate(${(e.clientX - r.left - r.width/2) * 0.18}px,${(e.clientY - r.top - r.height/2) * 0.3}px)`;
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transition = 'transform .5s cubic-bezier(.2,.8,.2,1)';
+      btn.style.transform = '';
+      setTimeout(() => btn.style.transition = '', 500);
+    });
   });
 })();
-
 /* ---------- live Calgary clock ---------- */
 (function(){
   const el = document.getElementById('clock');
