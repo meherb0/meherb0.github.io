@@ -2,8 +2,8 @@
   --ink:#0a0e16;
   --ink-soft:#0e131d;
   --paper:#eae7e0;
-  --dim:rgba(234,231,224,.52);
-  --faint:rgba(234,231,224,.28);
+  --dim:rgba(234,231,224,.72);
+  --faint:rgba(234,231,224,.46);
   --line:rgba(234,231,224,.09);
   --gold:#d9a441;
   --gold-dim:rgba(217,164,65,.5);
@@ -350,3 +350,11 @@ section{padding-top:clamp(80px,13vh,160px);padding-bottom:clamp(80px,13vh,160px)
 .copy-btn.copied{color:var(--gold)}
 
 @media (prefers-reduced-motion: reduce){.pulse{animation:none}}
+
+/* ============ readability boost ============ */
+.about-side p b,
+.proj-body li b{font-weight:500}
+.facts .v,
+.cert-list li{color:var(--paper)}
+.cert-list li span{color:var(--faint)}
+.hero-foot p{color:rgba(234,231,224,.78)}
